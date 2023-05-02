@@ -28,7 +28,7 @@ class Traductor(commands.Cog):
     async def on_raw_reaction_add(self, payload):
         await eventOnRawReactionAdd.onRawReactionAdd(payload)
 
-    groupTraductor = discordCommands.SlashCommandGroup("traductor", "Various commands to translate your messages.")
+    groupTraductor = discordCommands.SlashCommandGroup("traductor", "🔶 Group of commands to manage the Traductor addon.")
 
     # Verify if the bot has the prerequisites permissions
     @groupTraductor.command(name="requirements", description="Check the prerequisites permissions of the addon.")
