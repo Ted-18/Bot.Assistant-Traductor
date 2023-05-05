@@ -5,7 +5,7 @@ import addons.Traductor.functions.commands.commandRequirements as commandRequire
 import addons.Traductor.functions.events.eventOnRawReactionAdd as eventOnRawReactionAdd
 
 # BOTASSISTANT IMPORTS
-from services.serviceLogger import consoleLogger as Logger
+from services.serviceLogger import Logger
 from services.serviceDiscordLogger import discordLogger as DiscordLogger
 from settings.settingBot import debug
 
@@ -38,7 +38,7 @@ class Traductor(commands.Cog):
 
 
 def setup(bot):
-    if debug: Logger.debug("Loading cog: " + init.cogName)
+    Logger.debug("Loading cog: " + init.cogName)
     bot.add_cog(Traductor(bot))
     
     
